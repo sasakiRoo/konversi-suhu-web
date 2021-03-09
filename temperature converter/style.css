@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #e5e5e5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.85s ease-in;
+}
+
+.container{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(204, 204, 255, 0.8);
+    border-bottom-right-radius: 1.2em;
+    border-top-left-radius: 1.2em;
+    transition: 0.78s ease-in;
+    box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.3);
+}
+.container:hover{
+    transform: scale(1.05);
+}
+.input-field{
+    width: 300px;
+    background: rgba(100, 100, 255, 0.87);
+    padding: 10px;
+    margin: 10px 0;
+}
+input{
+    outline: none;
+    border: none;
+    background: none;
+    width: 300px;
+    color: rgba(255, 255, 255, 0.78);
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.78);
+    text-transform: uppercase;
+}
+.submit{
+    padding: 5px;
+    outline: none;
+    border: none;
+    background: rgba(100, 100, 205, 0.87);
+    color: white;
+    cursor: pointer;
+}
+.output-section{
+    width: 90%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+/*text animation from js library*/
+.ml16 {
+  color: #402d2d;
+  padding: 40px 0;
+  font-weight: 800;
+  font-size: 1.01em;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.ml16 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+.social a{
+    font-size: 1.2em;
+    color: rgba(100, 100, 255, 1);
+    text-decoration: none;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.social a:hover::after{
+    position: absolute;
+    content: "";
+    width: 16.5px;
+    height: 16.5px;
+    padding: 5px;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(102, 10, 255, 0.17);
+}
